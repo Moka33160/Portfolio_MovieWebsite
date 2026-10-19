@@ -1,17 +1,6 @@
-import React from "react";
+import { useLanguage } from './useLanguage.js';
 
 export const Header = () => {
-  return (
-    <>
-      <div className="pattern" />
-      <div className="wrapper">
-        <header>
-          <h1 className="w-fit h-fit">
-            Find all the <span className="text-gradient">Movie</span> you like
-            to watch
-          </h1>
-        </header>
-      </div>
-    </>
-  );
+  const { t } = useLanguage();
+  return <div className="wrapper"><header><h1>{t('Trouvez votre prochain film.')}</h1></header></div>;
 };

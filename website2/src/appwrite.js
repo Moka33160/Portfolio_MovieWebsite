@@ -1,46 +1,29 @@
-import { Client, Databases, Query } from "appwrite";
+import { Client, Databases, ID, Query } from 'appwrite';
 
-const DATABASE_ID = import.meta.env.VITE_APPWRITE_DB_API_KEY;
-const DATABASE_COLLLECTION = import.meta.env.VITE_APPWRITE_COLLECTION_API_KEY;
-const PROJECT_ID = import.meta.env.VITE_APPWRITE_API_KEY;
+const databaseId = import.meta.env.VITE_APPWRITE_DB_API_KEY;
+const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_API_KEY;
+const projectId = import.meta.env.VITE_APPWRITE_API_KEY;
+const databases = projectId && databaseId && collectionId
+  ? new Databases(new Client().setEndpoint('https://cloud.appwrite.io/v1').setProject(projectId))
+  : null;
 
-const client = new Client()
-  .setEndpoint("https://cloud.appwrite.io/v1")
-  .setProject(PROJECT_ID);
-
-const databases = new Databases(client);
-
-export const appwriteData = async (searchTerm, movie) => {
+// Search analytics are optional and must never prevent displaying movie results.
+export async function appwriteData(searchTerm, movie) {
+  if (!databases) return;
   try {
-    const result = await databases.listDocuments(
-      DATABASE_ID,
-      DATABASE_COLLLECTION,
-      [Query.filter("search_term", searchTerm)]
-    );
-
-    if (result.documents.length > 0) {
-      const doc = documents[0];
-
-      await databases.updateDocument(
-        DATABASE_ID,
-        DATABASE_COLLLECTION,
-        doc.$id,
-        { count: doc.count + 1 }
-      );
+    const result = await databases.listDocuments(databaseId, collectionId, [Query.equal('searchTerm', searchTerm)]);
+    const document = result.documents[0];
+    if (document) {
+      await databases.updateDocument(databaseId, collectionId, document.$id, { count: document.count + 1 });
     } else {
-      await databases.createDocument(
-        DATABASE_ID,
-        DATABASE_COLLLECTION,
-        ID.unique(),
-        {
-          searchTerm,
-          count: 1,
-          movie_id: movie.id,
-          poster: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
-        }
-      );
+      await databases.createDocument(databaseId, collectionId, ID.unique(), {
+        searchTerm,
+        count: 1,
+        movie_id: movie.id,
+        poster: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '',
+      });
     }
-  } catch (error) {
-    console.log(error);
+  } catch {
+    // Appwrite may be unconfigured or unavailable; the TMDB demo remains usable.
   }
-};
+}
