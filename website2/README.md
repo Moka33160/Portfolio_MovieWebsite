@@ -55,7 +55,11 @@ Le CV fourni est disponible depuis l’accueil et la section contact, dans `publ
 
 ## Anicard dans le portfolio
 
-Anicard est présenté en tête des projets avec une capture réelle et un bouton vers `?demo=anicard`. La présentation est disponible dans les cinq langues ; l’interface du jeu reste en anglais. Les autres projets et la démonstration de films restent accessibles.
+Anicard est présenté en tête des projets avec une capture réelle, une vidéo d’ouverture de booster et un bouton vers `?demo=anicard`. Le lanceur macOS `public/documents/Lancer Anime Card.command` est proposé au téléchargement depuis la fiche. La présentation est disponible dans les cinq langues ; l’interface du jeu reste en anglais. Le projet Morpion & Minimax inclut aussi une vidéo de démonstration.
+
+Pour tester Anicard en local, cloner le [dépôt Anicard](https://github.com/Moka33160/Anicard), installer ses prérequis comme indiqué dans son README, puis lancer le fichier `.command` depuis la racine du dépôt. Le script applique les migrations, initialise la base locale SQLite, puis démarre l’API FastAPI, le worker d’import et le site Vite. Il faut laisser la fenêtre Terminal ouverte pendant le test ; `Ctrl+C` arrête les services. PostgreSQL n’est pas lancé par ce script et doit être démarré séparément si cette base est utilisée.
+
+Les vidéos d’origine sont conservées dans `public/videos/` au format QuickTime `.mov`.
 
 `public/demos/anicard/` contient une version compilée de l’interface actuelle, avec navigation par hash pour fonctionner sur un hébergement statique. Aucun compte, mot de passe, fichier `.env` ou base de données du projet d’origine n’est copié. Le projet source demeure inchangé.
 

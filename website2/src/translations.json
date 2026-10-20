@@ -153,7 +153,14 @@
     "Démonstration interactive Anicard": "Démonstration interactive Anicard",
     "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.": "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.",
     "05 / APPLICATION WEB": "05 / APPLICATION WEB",
-    "Développé avec l’aide de l’IA": "Développé avec l’aide de l’IA"
+    "Développé avec l’aide de l’IA": "Développé avec l’aide de l’IA",
+    "Ouverture d’un booster — vidéo d’Anicard": "Ouverture d’un booster — vidéo d’Anicard",
+    "Démonstration vidéo du Morpion et de l’algorithme Minimax": "Démonstration vidéo du Morpion et de l’algorithme Minimax",
+    "Télécharger le lanceur macOS": "Télécharger le lanceur macOS",
+    "Votre navigateur ne peut pas lire cette vidéo.": "Votre navigateur ne peut pas lire cette vidéo.",
+    "Vidéo de l’ouverture d’un booster dans Anicard": "Vidéo de l’ouverture d’un booster dans Anicard",
+    "Vidéo de démonstration du projet Morpion Minimax": "Vidéo de démonstration du projet Morpion Minimax",
+    "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser.": "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser."
   },
   "en": {
     "Projet de groupe · BUT Informatique": "Group project · BUT Computer Science",
@@ -309,7 +316,14 @@
     "Démonstration interactive Anicard": "Interactive Anicard demo",
     "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.": "Browsable presentation version, in English. Game data and actions require the Anicard server; if it is offline, you can still explore the interface.",
     "05 / APPLICATION WEB": "05 / WEB APPLICATION",
-    "Développé avec l’aide de l’IA": "Developed with AI assistance"
+    "Développé avec l’aide de l’IA": "Developed with AI assistance",
+    "Ouverture d’un booster — vidéo d’Anicard": "Anicard booster opening — video",
+    "Démonstration vidéo du Morpion et de l’algorithme Minimax": "Tic-tac-toe and Minimax demo video",
+    "Télécharger le lanceur macOS": "Download the macOS launcher",
+    "Votre navigateur ne peut pas lire cette vidéo.": "Your browser cannot play this video.",
+    "Vidéo de l’ouverture d’un booster dans Anicard": "Video showing an Anicard booster opening",
+    "Vidéo de démonstration du projet Morpion Minimax": "Video demo of the Tic-tac-toe Minimax project",
+    "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser.": "To try the full game, clone the Anicard repository and install its dependencies before running this script. It applies migrations, initializes the local SQLite database, then starts the FastAPI API, import worker and website. Keep the Terminal window open while testing; Ctrl+C stops the services. Start PostgreSQL separately if you want to use it."
   },
   "es": {
     "Projet de groupe · BUT Informatique": "Proyecto en grupo · BUT Informática",
@@ -465,7 +479,14 @@
     "Démonstration interactive Anicard": "Demo interactiva de Anicard",
     "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.": "Versión navegable de presentación, en inglés. Los datos y las acciones de juego requieren el servidor Anicard; si está desconectado, la interfaz sigue siendo accesible.",
     "05 / APPLICATION WEB": "05 / APLICACIÓN WEB",
-    "Développé avec l’aide de l’IA": "Desarrollado con ayuda de IA"
+    "Développé avec l’aide de l’IA": "Desarrollado con ayuda de IA",
+    "Ouverture d’un booster — vidéo d’Anicard": "Vídeo de apertura de un sobre de Anicard",
+    "Démonstration vidéo du Morpion et de l’algorithme Minimax": "Vídeo de demostración del tres en raya y Minimax",
+    "Télécharger le lanceur macOS": "Descargar el lanzador para macOS",
+    "Votre navigateur ne peut pas lire cette vidéo.": "Tu navegador no puede reproducir este vídeo.",
+    "Vidéo de l’ouverture d’un booster dans Anicard": "Vídeo de la apertura de un sobre en Anicard",
+    "Vidéo de démonstration du projet Morpion Minimax": "Vídeo de demostración del proyecto Tres en raya Minimax",
+    "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser.": "Para probar el juego completo, clona el repositorio de Anicard e instala sus dependencias antes de ejecutar este script. Aplica las migraciones, inicializa la base de datos local SQLite y luego inicia la API FastAPI, el trabajador de importación y el sitio web. Mantén abierta la ventana de Terminal durante la prueba; Ctrl+C detiene los servicios. Si quieres usar PostgreSQL, debes iniciarlo por separado."
   },
   "de": {
     "Projet de groupe · BUT Informatique": "Gruppenprojekt · BUT Informatik",
@@ -621,7 +642,14 @@
     "Démonstration interactive Anicard": "Interaktive Anicard-Demo",
     "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.": "Navigierbare Präsentationsversion auf Englisch. Spieldaten und Aktionen benötigen den Anicard-Server; ohne ihn lässt sich die Oberfläche weiterhin erkunden.",
     "05 / APPLICATION WEB": "05 / WEBANWENDUNG",
-    "Développé avec l’aide de l’IA": "Mit KI-Unterstützung entwickelt"
+    "Développé avec l’aide de l’IA": "Mit KI-Unterstützung entwickelt",
+    "Ouverture d’un booster — vidéo d’Anicard": "Video: Booster in Anicard öffnen",
+    "Démonstration vidéo du Morpion et de l’algorithme Minimax": "Videovorführung von Tic-Tac-Toe und Minimax",
+    "Télécharger le lanceur macOS": "macOS-Starter herunterladen",
+    "Votre navigateur ne peut pas lire cette vidéo.": "Dein Browser kann dieses Video nicht abspielen.",
+    "Vidéo de l’ouverture d’un booster dans Anicard": "Video vom Öffnen eines Boosters in Anicard",
+    "Vidéo de démonstration du projet Morpion Minimax": "Videovorführung des Tic-Tac-Toe-Minimax-Projekts",
+    "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser.": "Um das vollständige Spiel auszuprobieren, klone das Anicard-Repository und installiere dessen Abhängigkeiten, bevor du das Skript startest. Es führt Migrationen aus, initialisiert die lokale SQLite-Datenbank und startet anschließend die FastAPI-API, den Import-Worker und die Website. Lass das Terminal während des Tests geöffnet; Strg+C beendet die Dienste. PostgreSQL muss bei Bedarf separat gestartet werden."
   },
   "nl": {
     "Projet de groupe · BUT Informatique": "Groepsproject · BUT Informatica",
@@ -777,6 +805,13 @@
     "Démonstration interactive Anicard": "Interactieve Anicard-demo",
     "Version de présentation navigable, en anglais. Les données et les actions de jeu nécessitent le serveur Anicard ; si celui-ci est arrêté, l’interface reste consultable.": "Navigeerbare presentatieversie in het Engels. Spelgegevens en acties vereisen de Anicard-server; als deze offline is, blijft de interface te bekijken.",
     "05 / APPLICATION WEB": "05 / WEBAPPLICATIE",
-    "Développé avec l’aide de l’IA": "Ontwikkeld met hulp van AI"
+    "Développé avec l’aide de l’IA": "Ontwikkeld met hulp van AI",
+    "Ouverture d’un booster — vidéo d’Anicard": "Video: een Anicard-booster openen",
+    "Démonstration vidéo du Morpion et de l’algorithme Minimax": "Videodemonstratie van boter-kaas-en-eieren en Minimax",
+    "Télécharger le lanceur macOS": "macOS-starter downloaden",
+    "Votre navigateur ne peut pas lire cette vidéo.": "Je browser kan deze video niet afspelen.",
+    "Vidéo de l’ouverture d’un booster dans Anicard": "Video van het openen van een booster in Anicard",
+    "Vidéo de démonstration du projet Morpion Minimax": "Videodemonstratie van het Boter-kaas-en-eieren-Minimax-project",
+    "Pour essayer le jeu complet, clonez le dépôt Anicard et installez ses dépendances avant de lancer le script. Il applique les migrations, initialise la base locale SQLite puis démarre l’API FastAPI, le worker d’import et le site web. Laisser la fenêtre Terminal ouverte pendant le test ; Ctrl+C arrête les services. PostgreSQL doit être démarré séparément si vous souhaitez l’utiliser.": "Om het volledige spel te testen, clone je de Anicard-repository en installeer je de afhankelijkheden voordat je dit script start. Het voert migraties uit, initialiseert de lokale SQLite-database en start daarna de FastAPI-API, de importworker en de website. Laat het Terminal-venster open tijdens het testen; Ctrl+C stopt de services. PostgreSQL moet je apart starten als je dat wilt gebruiken."
   }
 }
