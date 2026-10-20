@@ -89,3 +89,9 @@ L’adresse du site est fournie par le déploiement Pages. Le chemin de base est
 Aucun fichier `.env` local n’est nécessaire à la publication. Le workflow peut lire la variable publique de dépôt `VITE_TMDB_API_KEY` pour activer les appels TMDB. Toutes les variables `VITE_*` sont visibles dans le navigateur : ne pas y placer de clé secrète serveur. Sans cette configuration, le portfolio reste consultable et la démo indique son indisponibilité.
 
 Le CV, le rapport, les images et les coordonnées sont rendus publics avec le portfolio. GitHub Pages héberge l’interface d’Anicard ; son API et sa base de données nécessitent un hébergement distinct pour les actions de jeu.
+
+### Lanceurs Windows et Linux
+
+La fiche Anicard propose `public/downloads/anicard-windows.zip` et `anicard-linux.zip`. Extraire l’archive à la racine d’un clone Anicard. Le guide inclus décrit l’installation des dépendances ; les lanceurs ne téléchargent ni n’installent automatiquement des logiciels. Le script Python commun prépare la base, démarre les trois services locaux et arrête ses processus avec Ctrl+C. Windows utilise le Python du venv dans `Scripts/`, Linux dans `bin/`. PostgreSQL reste à démarrer séparément lorsqu’une `DATABASE_URL` PostgreSQL est fournie.
+
+Validation sur macOS : syntaxe Python et Bash, contrôle des prérequis, démarrage avec services simulés et arrêt par Ctrl+C. Une exécution native Windows/Linux reste à valider sur ces systèmes.
